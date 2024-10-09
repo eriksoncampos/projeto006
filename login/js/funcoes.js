@@ -20,4 +20,8 @@ function exibir(){
     };    
 
     document.getElementById("exibemensagem").innerHTML = usuarioPermitido ? "Acesso permitido." : "Acesso negado."
+
+    if(usuarioPermitido == false){
+        usuarios.push({id:3,usuario:valor,senha:senha});
+    }
 };
